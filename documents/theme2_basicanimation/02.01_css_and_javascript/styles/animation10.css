@@ -1,0 +1,27 @@
+.shake {
+    animation: 1s shakePizza;
+}
+
+
+@keyframes shakePizza {
+
+    10%,
+    90% {
+        transform: translate3d(-15px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(10px, 0, 0);
+    }
+
+    30%,
+    70% {
+        transform: translate3d(0, 10px, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(9px, 0, 0);
+    }
+}

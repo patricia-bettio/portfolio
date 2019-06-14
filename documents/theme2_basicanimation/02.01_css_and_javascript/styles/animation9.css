@@ -1,0 +1,25 @@
+.fall {
+
+    animation: fallPizza 1s linear;
+}
+
+@keyframes fallPizza {
+
+
+    0% {
+        transform: rotate(0)
+    }
+
+    25% {
+        transform: rotate(80deg)
+    }
+
+    50% {
+        transform: rotate(120deg)
+    }
+
+    100% {
+        transform: rotate(120deg)
+    }
+
+}

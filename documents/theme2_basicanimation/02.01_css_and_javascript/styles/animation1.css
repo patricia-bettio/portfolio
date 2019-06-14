@@ -1,0 +1,13 @@
+.moveOutside {
+    animation: 3s movePizzaOutside infinite;
+}
+
+@keyframes movePizzaOutside {
+    0% {
+        transform: translate(-500px);
+    }
+
+    100% {
+        transform: translate(+2500px);
+    }
+}

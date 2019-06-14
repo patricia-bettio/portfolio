@@ -1,0 +1,13 @@
+.moveallout {
+    animation: 2s takeMeAway;
+}
+
+@keyframes takeMeAway {
+    0% {
+        transform: translate(-500px);
+    }
+
+    100% {
+        transform: translate(+2500px);
+    }
+}

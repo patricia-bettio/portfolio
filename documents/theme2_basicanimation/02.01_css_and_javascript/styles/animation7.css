@@ -1,0 +1,17 @@
+.fade {
+    animation: fadePizza 2s infinite;
+}
+
+@keyframes fadePizza {
+
+    10% {
+        opacity: 1;
+
+
+    }
+
+    100% {
+        opacity: 0;
+
+    }
+}

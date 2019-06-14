@@ -1,0 +1,20 @@
+.glow {
+
+    animation: glowPizza 0.1s infinite;
+}
+
+@keyframes glowPizza {
+
+    0% {
+        opacity: 1;
+
+
+    }
+
+    100% {
+        opacity: 0;
+
+    }
+}
+
+

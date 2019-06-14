@@ -1,0 +1,19 @@
+.move30 {
+    animation: 4s moveTo30;
+}
+
+@keyframes moveTo30 {
+
+    0% {
+        transform: translate(-500px);
+    }
+
+    50% {
+        transform: translate(30%);
+    }
+
+    100% {
+        transform: translate(30%);
+    }
+
+}

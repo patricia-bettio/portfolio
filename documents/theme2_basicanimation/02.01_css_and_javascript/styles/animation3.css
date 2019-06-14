@@ -1,0 +1,22 @@
+.jump {
+
+    animation: jump 1s linear alternate;
+}
+
+@keyframes jump {
+    0% {
+        transform: translate3d(0, 0, 0)
+    }
+
+    10% {
+        transform: translate3d(0, -60%, 0)
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0)
+    }
+
+
+
+
+}

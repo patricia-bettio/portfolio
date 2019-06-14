@@ -1,0 +1,14 @@
+.speak {
+    animation: 1s speakPizza;
+}
+
+
+@keyframes speakPizza {
+
+
+    50% {
+        transform: scaleY(1.5);
+    }
+
+
+}
