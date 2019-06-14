@@ -1,0 +1,168 @@
+/*Start page*/
+body{
+    margin: 0;
+}
+
+#background {
+    background-image: url(img/blackhouse.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    position: absolute;
+    left: 150px;
+    font-size: 60px;
+    color: black;
+    font-family: "ozs_wizardcowardly_lion";
+}
+
+#rainbow{
+    position: relative;
+    bottom: 400px;
+    left: 30px;
+    width: 1100px;
+
+}
+
+/*
+#house {
+    width:100%;
+    height:auto;
+    bottom: 20px;
+}
+*/
+
+#twister {
+    position: absolute;
+    bottom: 25px;
+    width: 200px;
+}
+.tornado{
+    animation: mymove 9s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes mymove {
+    50% {
+        transform: translateX(60vh);
+    }
+}
+
+.spin{
+    animation: 1s destroy;
+}
+
+@keyframes destroy{
+    25%{
+        transform: scale(2);
+    }
+
+    50%{
+        transform: scale(3);
+    }
+    75%{
+        transform: scale(4);
+    }
+    100%{
+        transform: scale(5);
+    }
+}
+
+
+#bt1 {
+    text-decoration: none;
+    font-size: 40px;
+    position: absolute;
+    top: 620px;
+    left: 1150px;
+    border-radius: 30px;
+    width: auto;
+    height: auto;
+    background: linear-gradient(90deg, black, white, grey, black);
+    background-size: 100%;
+    font-family: "ozs_wizardcowardly_lion";
+}
+
+#clickaudio {
+    top: 550px;
+    right: 1150px;
+    position: absolute;
+}
+
+
+.button:hover {
+    opacity: 1;
+}
+
+/*Door*/
+
+#container {
+    background-color: black;
+}
+
+p {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
+#door {
+    position: absolute;
+    left: 525px;
+    bottom: 20px;
+    width: 250px;
+    height: 500px;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+
+    100% {
+        box-shadow:
+            0 0 3px 3px yellow,
+            0 0 10px 10px orange,
+            0 0 200px 15px white;
+    }
+
+}
+
+
+
+/*DORR SCENCE STUFF/*
+
+body {
+    margin: 0;
+    background-image: url(img/background6.png.tmp$$);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+p {
+    color: white;
+    text-align: center;
+}
+.backDoor {
+    background-image: url(img/bg-door.jpg);
+    position: relative;
+    top: 120px;
+    left: 300px;
+    width: 300px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.door {
+    background-image: url(img/door.svg);
+    width: 300px;
+    height: 600px;
+    transform-origin: left;
+    /*Set speed below*/
+    transition: all 0.5s ease-in-out;
+}
+.doorOpen {
+    /*prespectiv creates the door open effect*/
+    transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
+}

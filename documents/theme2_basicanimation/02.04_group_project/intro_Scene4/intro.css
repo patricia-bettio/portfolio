@@ -1,0 +1,213 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    background-image: url(imgs/whatwhat.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#dorothy {
+    width: 220px;
+    position: absolute;
+    top: 330px;
+
+}
+
+#toto {
+    position: absolute;
+    left: 200px;
+    bottom: 0px;
+
+
+}
+
+
+#scarecrow {
+    width: 130px;
+    position: absolute;
+    right: -150px;
+    padding: 20px;
+    top: 300px;
+}
+
+.appear {
+    animation: showing 2s linear forwards;
+}
+
+@keyframes showing {
+
+
+    100% {
+        transform: translate(-50vw);
+    }
+}
+
+#tinman {
+    width: 120px;
+    position: absolute;
+    right: -130px;
+    top: 300px;
+}
+
+.foshow {
+    animation: hello 2s linear forwards;
+}
+
+@keyframes hello {
+    50% {
+        transform: translate(-20vw);
+    }
+
+    100% {
+        transform: translate(-34vw);
+    }
+}
+
+
+#lion {
+    width: 340px;
+    position: absolute;
+    right: -150px;
+    top: 340px;
+}
+
+.zap {
+    animation: supdog 2s linear forwards;
+}
+
+@keyframes supdog {
+    50% {
+        transform: translate(-20vw);
+    }
+
+    100% {
+        transform: translate(-20vw)
+    }
+}
+
+#dori {
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+    text-decoration: none;
+    font-size: 40px;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    border: 1px;
+    background-size: 100%;
+    border-radius: 30px;
+}
+
+
+#next {
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    position: absolute;
+    bottom: 1vw;
+    right: 1vw;
+    text-decoration: none;
+    font-size: 40px;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    border: 1px;
+    background-size: 100%;
+    border-radius: 30px;
+}
+
+#trap {
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    position: absolute;
+    top: 50px;
+    left: 112px;
+    transform: translate(-50%, 50%);
+    text-decoration: none;
+    font-size: 40px;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    border: 1px;
+    background-size: 150%;
+    border-radius: 30px;
+}
+
+#can {
+    text-decoration: none;
+    font-size: 40px;
+    position: absolute;
+    top: 148px;
+    left: 1vw;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    position: absolute;
+    text-decoration: none;
+    font-size: 40px;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    border: 1px;
+    background-size: 100%;
+    border-radius: 30px;
+}
+
+#leo {
+    text-decoration: none;
+    font-size: 40px;
+    padding: 5px;
+    position: absolute;
+    top: 214px;
+    left: 18px;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    position: absolute;
+    text-decoration: none;
+    font-size: 40px;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    border: 1px;
+    background-size: 150%;
+    border-radius: 30px;
+}
+
+
+/* unvisited link */
+a:link {
+  color: white;
+text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}

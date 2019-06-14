@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="62px" viewBox="0 0 48 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Toto</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 23.0380952 0 23.0380952 18.7012987 0.39047619 27.6623377"></polygon>
+        <filter x="-30.4%" y="-18.1%" width="160.8%" height="150.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <polygon id="path-4" points="0 0 25.7714286 2.72727273 25.7714286 20.6493506 20.5 16.7532468 13.6666667 20.6493506 9.95714286 16.7532468 4.68571429 19.8701299"></polygon>
+    </defs>
+    <g id="Moodboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-875.000000, -220.000000)">
+        <g id="Toto" transform="translate(875.000000, 220.000000)">
+            <g id="Body" transform="translate(12.000000, 24.000000)" fill="#4A3C41">
+                <path d="M8.44421708,10.6639087 C11.689744,6.54814318 15.1858686,3.40472408 18.9325908,1.23365139 L18.9325689,1.23361362 C23.1124612,-1.18846346 28.4644148,0.236527317 30.8864919,4.41641961 C31.477472,5.43630168 31.856224,6.56510783 32,7.73504173 L31.9999999,6.83729362 C31.9999999,12.3555399 30.9378437,17.8222058 28.8714949,22.9389669 C28.2021026,24.5965381 27.8674065,26.2541093 27.8674065,27.9116806 C27.8674065,27.9279259 27.8674387,27.9441713 27.867503,27.9604167 L27.8675075,27.9604167 C27.8893663,33.4832234 23.4299668,37.9780629 17.9071601,37.9999217 C17.8939672,37.9999739 17.8807742,38 17.8675813,38 L0.179030089,38 C-0.760016724,27.9543576 1.99504561,18.8423271 8.44421708,10.6639087 Z" id="Rectangle-10"></path>
+            </g>
+            <g id="Left-Ear" transform="translate(23.000000, 0.000000)">
+                <polygon id="Triangle-5" fill="#4A3C41" points="4 0 8 7 0 7"></polygon>
+                <polygon id="Triangle-5-Copy" fill="#F5EEFA" points="3.80952381 1.47368421 6.85714286 6.80701754 0.761904762 6.80701754"></polygon>
+            </g>
+            <g id="Head" transform="translate(3.000000, 4.000000)">
+                <g id="Group" transform="translate(17.961905, 2.337662)">
+                    <g id="Rectangle-19">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Mask">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <use fill="#46393D" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <rect fill="#000000" mask="url(#mask-2)" x="-0.39047619" y="15.5844156" width="5.07619048" height="1" rx="0.5"></rect>
+                    </g>
+                    <g id="Eye" transform="translate(9.371429, 2.727273)">
+                        <path d="M6.24761905,8.57142857 C7.82908205,8.57142857 9.91162173,7.14285714 12.4952381,4.28571429 C9.91162173,1.42857143 7.82908205,0 6.24761905,0 C4.66615605,0 2.58361637,1.42857143 0,4.28571429 C2.58361637,7.14285714 4.66615605,8.57142857 6.24761905,8.57142857 Z" id="Oval-8" fill="#FFFFFF"></path>
+                        <ellipse id="Oval-9" fill="#000000" cx="6.44285714" cy="4.48051948" rx="2.14761905" ry="2.14285714"></ellipse>
+                    </g>
+                </g>
+                <g id="Triangle-2">
+                    <mask id="mask-5" fill="white">
+                        <use xlink:href="#path-4"></use>
+                    </mask>
+                    <use id="Mask" fill="#4A3C41" xlink:href="#path-4"></use>
+                    <polygon fill="#000000" mask="url(#mask-5)" transform="translate(1.501847, -0.839145) rotate(-45.000000) translate(-1.501847, 0.839145) " points="1.50184721 -9.06165668 9.74263098 7.38336635 -6.73893655 7.38336635"></polygon>
+                </g>
+            </g>
+            <g id="Tail" transform="translate(0.000000, 33.000000)" fill="#4A3C41">
+                <path d="M4.36534072,0.0345565028 C5.85607841,-0.469071432 4.67920221,4.63053199 7.81781717,8.91491593 C9.05412687,10.6025474 11.407825,11.7032556 14.2511887,13.4634067 C16.1467644,14.6368407 18.3963682,16.0807969 21,17.7952754 C20.7246477,22.0682415 18.0045147,22.0682415 12.8396011,17.7952754 C9.88031273,15.3470371 2.73029863,13.8590513 0.808374061,11.2829726 C-0.103202833,10.0611277 -0.312945111,6.02318168 0.537500202,3.69966931 C1.48009259,1.12440073 3.58166617,0.299311593 4.36534072,0.0345565028 Z" id="Rectangle-12"></path>
+            </g>
+            <path d="M7,57 L26,57 L26,62 L2,62 L2,62 C2,59.2385763 4.23857625,57 7,57 Z" id="Foot" fill="#4A3C41"></path>
+            <g id="Right-Ear" transform="translate(33.000000, 0.000000)">
+                <polygon id="Triangle-4" fill="#4A3C41" points="7.81818182 0 7.61771562 7 0 7"></polygon>
+                <polygon id="Triangle-4-Copy" fill="#F5EEFA" points="7.45454545 1.10526316 7.3006993 6.47735618 1.45454545 6.47735618"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

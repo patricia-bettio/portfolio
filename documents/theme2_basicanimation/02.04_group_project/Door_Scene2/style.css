@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    background-image: url(img/background6.png.tmp$$);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+p {
+    color: white;
+    text-align: center;
+}
+.backDoor {
+    background-image: url(img/bg-door.jpg);
+    position: relative;
+    top: 120px;
+    left: 300px;
+    width: 300px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.door {
+    background-image: url(img/door.svg);
+    width: 300px;
+    height: 600px;
+    transform-origin: left;
+    /*Set speed below*/
+    transition: all 0.5s ease-in-out;
+}
+
+.doorOpen {
+    /*prespectiv creates the door open effect*/
+    transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
+}
+
+#bt1 {
+    text-decoration: none;
+    font-size: 40px;
+    position: absolute;
+    top: 620px;
+    left: 1150px;
+    font-family: "ozs_wizardcowardly_lion";
+    background: linear-gradient(90deg, black, white, grey, black);
+    border-radius: 30px;
+}
+
+/* unvisited link */
+a:link {
+  color: white;
+text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
