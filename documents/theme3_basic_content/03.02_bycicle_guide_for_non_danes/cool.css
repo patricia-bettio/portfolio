@@ -1,0 +1,652 @@
+@font-face {
+    font-family: cr;
+    src: url('../fonts/cphregular.ttf');
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-areas: "wrapper topnav""wrapper container";
+    grid-template-columns: 183px 1fr;
+    font-family: cr;
+}
+
+header {
+    grid-area: topnav;
+}
+
+#container {
+    grid-area: container;
+}
+
+#wrapper {
+    grid-area: wrapper;
+}
+
+#main {
+    grid-area: container;
+}
+main{
+    margin-top: 200px;
+}
+
+#topnav{
+    position: fixed;
+    width: 87%;
+    left: 186px;
+    z-index: 2;
+
+}
+
+/*front page*/
+
+#logo {
+    position: absolute;
+    left: 0;
+    width: 160px;
+    height: 150px;
+    top: 0;
+    background:#ea573c;
+    margin: 0;
+    padding: 0;
+}
+
+#background {
+    position: absolute;
+    top: 160px;
+    width: 100%;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+}
+
+#bike {
+    position: absolute;
+    bottom: 100px;
+    width: 240px;
+}
+
+.ride {
+    animation: riding 3s forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes riding {
+    100% {
+        transform: translateX(81vw);
+    }
+}
+
+#box5{
+    position: absolute;
+    left: 160.2px;
+    width: 87.4%;
+    height: 150px;
+    background-color:#000C2f;
+}
+
+
+h15{
+    position: absolute;
+    left: 360px;
+    top: 40px;
+    color: #e2bfc0;
+    z-index: 5;
+    font-family: cr;
+    font-size: 55px;
+}
+
+
+/*Video page*/
+
+#container{
+    margin-left: 235px;
+}
+
+p1{
+    justify-content: center;
+}
+
+h2{
+    position: absolute;
+    left: 220px;
+    top: 120px;
+    color: #000C2f;
+    font-weight:bold;
+    font-family: cr;
+
+}
+
+
+#side {
+    width: 183px;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+}
+
+#logo2 {
+    position: absolute;
+    width: 170px;
+    top: 15px;
+    left: 5px;
+    position: fixed;
+}
+
+.sweet {
+    width: 100%;
+    height: 70px;
+    background-color: #000C2f;
+    margin: 0;
+    display: inline-block;
+}
+
+#bikelogo {
+    margin: 0;
+    float: left;
+    position: absolute;
+    top: -23px;
+    display: inline-block;
+    height: 90px;
+    width: 40%;
+}
+
+/*
+#foot{
+    position: fixed;
+    left: 186px;
+    width: 80vw;
+    height: 15px;
+    background-color:#000C2f;
+    bottom: 0;
+}
+
+#film{
+    position: fixed;
+}
+
+
+/*nav bar*/
+
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: -5px;
+    padding: 0;
+    justify-content: space-between;
+    align-content: center;
+    background-color: white;
+}
+
+ul li{
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    border: 1px solid #fde6d2;
+    text-align: center;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+ul li a{
+    text-decoration: none;
+    position: relative;
+    padding: 0;
+    font-size: 20px;
+    font-family: cr;
+    transition: 0.5s;
+    color: #000C2f;
+    box-sizing: border-box;
+    display: block;
+}
+
+ul li:hover {
+    background: #ea573c;
+}
+
+/* ul:hover li a {
+    transform: scale(1);
+    opacity: 5;
+    background: #ea573c;
+}
+
+ul li a:hover {
+    transform: scale(1);
+    opacity: 5;
+} */
+
+/* ul li a:before {
+    content: '';
+    position: absolute;
+    top: -11px;
+    left: -10px;
+    width: 309px;
+    height: 45px;
+    background: #ea573c;
+    transition: transform 0;
+    transform: scaleX(0);
+    z-index: -1;
+    margin: 0;
+}
+
+ul li a:hover:before {
+    transition: transform 0;
+    transform: scaleX(1);
+} */
+
+/* on hold
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+ul li {
+    list-style: none;
+    margin: 0 80px;
+    transition: 0.5s;
+
+}
+
+ul li a {
+    text-decoration: none;
+    position: relative;
+    display: block;
+    padding: 5px;
+    font-size: 20px;
+    font-family: cr;
+    transition: 0.5s;
+    color: #000C2f;
+}
+
+ul:hover li a {
+    transform: scale(1.5);
+    opacity: .2;
+    filter: blur(1px);
+}
+
+ul li a:hover {
+    transform: scale(2);
+    opacity: 1;
+    filter: blur(0);
+}
+
+ul li a:before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ea573c;
+    transition: transform 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1;
+}
+
+ul li a:hover:before {
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+*/
+
+/*How to page*/
+
+.gifs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 50px;
+    grid-column-gap: 50px;
+    padding: 0;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+}
+
+#box{
+    width: 375px;
+    height: 75px;
+    background: white;
+    position: absolute;
+    top: 120px;
+    left: 230px;
+}
+
+h3{
+    color: #000C2f;
+    margin-left: 50px;
+    font-size:25px;
+    font-weight: 700;
+}
+
+h4{
+    font-size: 22px;
+}
+
+#rules{
+    border: red solid 1px;
+    margin: 50px;
+    padding: 35px;
+}
+.single{
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+   margin-top: 25px;
+    margin-bottom: 15px;
+}
+.icon img{
+    width: 35%;
+    margin-left: 20px;
+    margin-top: -10px;
+    padding: 10px;
+}
+
+p2{
+    color: red;
+}
+
+/*Inspiration*/
+
+#box1{
+    position: fixed;
+    left: 185px;
+    top: 118px;
+    width: 200px;
+    height: 140px;
+    background-color: #000C2f;
+}
+
+#pic1{
+    position: fixed;
+    left: 389px;
+    top: 118px;
+    width: 200px;
+    height: 140px;
+}
+
+#box2 {
+    position: fixed;
+    left: 593px;
+    top: 118px;
+    width: 200px;
+    height: 140px;
+    background-color: #000C2f;
+}
+
+#pic2{
+    position: fixed;
+    left: 796px;
+    top: 118px;
+    width: 206px;
+    height: 140px;
+}
+
+#box3{
+    position: absolute;
+    right: 3px;
+    top: 118px;
+    width: 273px;
+    height: 140px;
+    background-color: #000C2f;
+}
+
+#insta{
+    position: fixed;
+    right: 150px;
+    top: 131px;
+    width: 65px;
+    height: 65px;
+    z-index: 5;
+    padding: 25px;
+}
+
+#face{
+    position: fixed;
+    right: 10px;
+    top: 128px;
+    width: 70px;
+    height: 68px;
+    z-index: 5;
+    padding: 25px;
+}
+
+
+#simple{
+    position: fixed;
+    left: 185px;
+    top: 260px;
+    width: 220px;
+    height: 182px;
+}
+
+#pic3{
+    position: fixed;
+    left: 408px;
+    top: 260px;
+    width: 262px;
+    height: 182px;
+}
+
+#pic4{
+    position: fixed;
+    left: 674px;
+    top: 260px;
+    width: 272px;
+    height: 182px;
+}
+
+#pic5{
+    position: fixed;
+    right: 2px;
+    top: 260px;
+    width: 330px;
+    height: 349px;
+}
+
+#pic6{
+    position: fixed;
+    left: 470px;
+    top: 444px;
+    width: 280px;
+    height: 167px;
+}
+
+#pic7{
+    position: fixed;
+    left: 186px;
+    top: 445px;
+    width: 280px;
+    height: 165px;
+}
+
+#box4{
+    position: absolute;
+    left: 754px;
+    bottom: 1px;
+    width: 191px;
+    height: 165px;
+    background-color: #000C2f;
+}
+
+
+h11{
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    color:#e2bfc0;
+    z-index: 5;
+    font-family: cr;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+h12{
+    position: absolute;
+    left: 100px;
+    top: 80px;
+    color: #ea573c;
+    z-index: 5;
+    font-family: cr;
+    font-size: 30px;
+}
+
+h13{
+    position: absolute;
+    left: 52px;
+    top: 35px;
+    color: #e2bfc0;
+    z-index: 5;
+    font-family: cr;
+    font-size: 20px;
+}
+
+
+h14{
+    position: absolute;
+    bottom: 15px;
+    color: #e2bfc0;
+    z-index: 5;
+    font-family: cr;
+    font-size: 20px;
+}
+
+/*INFO*/
+
+#info{
+    border: red solid 1px;
+    position: fixed;
+    top:130px;
+    left: 200px;
+    width: 560px;
+    height: 220px;
+}
+
+.outline{
+    position: absolute;
+    top: -10px;
+   left: 45px;
+
+}
+
+.logo3 img{
+    position: absolute;
+    width: 90px;
+    top: 130px;
+}
+
+.logo4 img{
+    position: absolute;
+    width: 90px;
+    top: 130px;
+    left: 130px;
+}
+
+#lowpic{
+    position: fixed;
+    bottom: 0;
+    width: 20vw;
+    left: 190px;
+}
+
+#donkey a{
+    position: fixed;
+    right: 170px;
+    top: 130px;
+    text-decoration: none;
+}
+
+p3{
+    position: absolute;
+    right: 350px;
+    top: 124px;
+    padding: 6px;
+    font-family: cr;
+    font-weight: 600;
+}
+
+#cycling a{
+    position: absolute;
+    right: 185px;
+    top: 168px;
+    text-decoration: none;
+}
+
+p4{
+    position: absolute;
+    right: 350px;
+    top: 160px;
+    padding: 6px;
+    font-family: cr;
+    font-weight: 600;
+}
+
+#cphbikes a{
+    position: absolute;
+    right: 178px;
+    top: 205px;
+    text-decoration: none;
+}
+
+p5{
+    position: absolute;
+    right: 350px;
+    top: 200px;
+    padding: 6px;
+    font-family: cr;
+    font-weight: 600;
+}
+
+#routes a{
+    position: absolute;
+    right: 240px;
+    top: 242px;
+    text-decoration: none;
+}
+
+p6{
+    position: absolute;
+    right: 350px;
+    top: 235px;
+    padding: 6px;
+    font-family: cr;
+    font-weight: 600;
+}
+
+#bikemap a{
+    position: absolute;
+    right: 274px;
+    top: 280px;
+    text-decoration: none;
+}
+
+p7{
+    position: absolute;
+    right: 350px;
+    top: 270px;
+    padding: 6px;
+    font-family: cr;
+    font-weight: 600;
+}
+
+#visitcph a{
+    position: absolute;
+    right: 205px;
+    top: 318px;
+    text-decoration: none;
+}
+
+p8{
+    position: absolute;
+    right: 350px;
+    top: 310px;
+    padding: 6px;
+    font-family: cr;
+    font-weight: 600;
+}
