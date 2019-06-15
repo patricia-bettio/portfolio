@@ -1,14 +1,18 @@
 body {
-    margin: 80px;
+  margin: 0;
+
+
 }
 .wrapper {
 
 
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 40px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
 }
+
+
 .box {
 
     height: 300px;
@@ -36,8 +40,8 @@ body {
     background-color: black;
 }
 .linkedin {
-    background: #007bb5;
-    color: palevioletred;
+    background-color: #007bb5;
+
 }
 .github {
     background-color: darkgreen;
@@ -49,17 +53,35 @@ body {
 @media screen and (max-width: 600px) {
     .somebar {
 
+       overflow: hidden;
+        position: fixed;
         bottom: 0;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        top: inherit;
+        display:inline-flex;
+        opacity: 0.8;
 
 
     }
-    .somebar a.linkedin {
 
 
+    .wrapper {
+        grid-template-columns: 1fr;
 
     }
-    .somebar a.github {
 
-        right: 100%;
+
+
+
+}
+
+@media screen and (min-width: 600px){
+
+    .body {
+        margin: 180px;
+
     }
+
 }
