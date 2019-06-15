@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+
+    <title>Community</title>
+
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="https://kea.dk/en/" class="keaicon" target="_blank"></a>
+        <a href="first.html" class="active">>>FRONTER</a>
+        <a href="career.html">CAREER</a>
+        <a href="#example">SCHEDULE(disabled)</a>
+        <a href="#example">TASKS(disabled)</a>
+        <a href="#example">KEAMAIL(disabled)</a>
+        <a href="#example">NOTIFICATIONS(disabled)</a>
+
+        <a href="index.html" class="floatout">LogOut</a>
+        <a href="profile.html" class="float">Profile</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <h1>KEA Community</h1>
+    <p>Trending now</p>
+    <div id="talkBox">
+        <div class="talkboxes"><img src="images/person.jpg" class="logosmall" alt="student picture">
+            <p class="text2">Hey guys!<br>I just had an interview at Novo Nordisk and be aware its tricky, they have group interview and they will not let you know! and after that there will be only one interview left. Good luck :) </p>
+        </div>
+
+
+        <div class="talkboxes"><img src="images/avatar.jpeg" class="logosmall" alt="student picture">
+            <p class="text2">Hi! Part time job cleaning at a restaurant, weekends only, fair pay. Good location- city center- and lots of good tips! Contact me! (click on image would take to student profile) </p>
+        </div>
+
+    </div>
+    <p>What's up?! Share your tips with the KEA Community</p>
+    <p id="demo"></p>
+
+    <input type="text" id="newBox" class="inputbox">
+    <button onclick="addText()">Share</button>
+
+
+    <script>
+        function addText() {
+            var newBox = document.getElementById("newBox").value;
+            document.getElementById("demo").innerHTML = newBox;
+        }
+    </script>
+
+</body>
+
+</html>

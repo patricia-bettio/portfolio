@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Logon</title>
+</head>
+
+
+
+<body>
+
+    <div class="topnav">
+        <a href="https://kea.dk/en/" class="keaicon" target="_blank"></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+    </div>
+    <button id="btn"> >> FRONTER Log In</button>
+
+    <section>
+
+        <form id="loginform" action="first.html">
+
+            <label for="name">Uni-Login</label>
+            <input type="text" id="name" class="loginbox" placeholder="Username"><br>
+            <label for="pw">Password</label>
+            <input type="password" id="pw" class="loginbox" placeholder="password"><br>
+            <input type="submit" class="btngo" value="GO" onclick="alert('You are now logged in Fronter! SOME OPTIONS IN THE MENU ARE CURRENTLY DISABLED')">
+
+
+
+        </form>
+
+        <p class="pum">or sign in with<br><img src="images/linkedin.png" class="loginlinkedin" alt="linkedin logo"></p>
+    </section>
+
+    <script>
+        btn.addEventListener("click", () => loginform.classList.toggle("show"))
+    </script>
+</body>
+
+</html>

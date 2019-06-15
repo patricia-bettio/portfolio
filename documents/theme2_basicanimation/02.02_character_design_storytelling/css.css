@@ -1,0 +1,20 @@
+.background {
+    background: url(images/background-01.png);
+    position: fixed;
+    background-repeat: no-repeat;
+    left: 0px;
+    right: 0px;
+    height: 800px;
+}
+.alien {
+
+   margin: 200px;
+  width: 300px;
+  height: 400px;
+  background: url(images/finalmente-01.png) left center;
+  animation: play 1s steps(7) infinite;
+}
+
+@keyframes play {
+    100% { background-position: -2100px; }
+}
