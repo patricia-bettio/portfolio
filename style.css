@@ -3,6 +3,69 @@ body {
     background-color: whitesmoke;
 
 }
+
+
+/**OVERALL GRID**/
+
+.container {
+display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr 4fr 1fr;
+    grid-template-areas:
+        'hero-image hero-image hero-image'
+        'menu menu menu'
+        'left main right'
+        'footer footer footer';
+    height: 100%;
+
+}
+
+.hero-image {
+    background-image: url(images/brasilia1.jpg);
+    display: grid;
+    grid-area: hero-image;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 30%;
+
+
+}
+.menu {
+    grid-area: menu;
+
+}
+
+.main {
+    grid-area: main;
+
+}
+
+.left {
+    grid-area: left;
+}
+
+.right {
+    grid-area: right;
+}
+
+
+
+.footer {
+    grid-area: footer;
+}
+
+
+/**end grid**/
+
+body {
+    height: 100%;
+    padding: 50px;
+    background-color: whitesmoke;
+
+}
+/**
 .wrapper {
 
 margin: 50px;
@@ -12,35 +75,79 @@ margin: 50px;
 
 }
 
+**/
 
-.box {
+/** text styles**/
 
+.title {
+    display: inline-block;
+    margin: 50px;
+    font-weight: bold;
+
+}
+
+.subtitle {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.wrapper {
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    padding: 0;
+    margin-top: 5px;
+    margin-left: 0;
+    margin-right: 0;
+    justify-items: center;
+
+}
+
+
+.textinfo {
+        display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.mini {
+
+
+    object-fit:cover;
     height: 200px;
     width: 280px;
     margin: 0px;
-}
-
-.mini {
-
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
 
 }
+.box {
+    display: block;
+    height: 300px;
+    width: 280px;
+}
+.box:hover .mini{
 
-.box:hover .mini {
     opacity: 0.3;
-
-
 }
 
-.box:hover {
+.mini:hover {
     background-color: black;
 }
 
-p {
-    object-fit: contain;
+.p {
+
+        display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
+
+
 
 .onhover {
     visibility: hidden;
@@ -52,20 +159,7 @@ p {
     opacity: 1;
 
 }
-.title {
 
-    font-size: 30px;
-    margin: 50px;
-    text-align: left;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-area: "title" "subtitle";
-
-}
-.subtitle {
-    text-align: left;
-
-}
 
 /** social media bar**/
 .somebar {
@@ -114,15 +208,14 @@ p {
     }
 
 
-    .wrapper {
-        grid-template-columns: 1fr;
-
-    }
 
 
 
 
 }
+
+
+
 
 @media screen and (min-width: 600px){
 
