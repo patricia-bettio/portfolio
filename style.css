@@ -9,26 +9,26 @@ body {
 
 .container {
 display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr 1fr 4fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1fr 1fr 8fr 1fr;
     grid-template-areas:
         'hero-image hero-image hero-image'
         'menu menu menu'
-        'left main right'
+        'left wrapper right'
         'footer footer footer';
-    height: 100%;
+
 
 }
 
 .hero-image {
-    background-image: url(images/brasilia1.jpg);
+    background-image: url(images/desktop-scene.jpg);
     display: grid;
     grid-area: hero-image;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
-    height: 30%;
+
 
 
 }
@@ -37,10 +37,7 @@ display: grid;
 
 }
 
-.main {
-    grid-area: main;
 
-}
 
 .left {
     grid-area: left;
@@ -65,24 +62,14 @@ body {
     background-color: whitesmoke;
 
 }
-/**
-.wrapper {
-
-margin: 50px;
-    display: grid;
-    grid-gap: 50px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-
-}
-
-**/
 
 /** text styles**/
 
 .title {
     display: inline-block;
-    margin: 50px;
+    margin: 30px;
     font-weight: bold;
+
 
 }
 
@@ -98,12 +85,12 @@ margin: 50px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
     grid-row-gap: 10px;
-    grid-column-gap: 10px;
+    grid-column-gap: 30px;
     padding: 0;
     margin-top: 5px;
     margin-left: 0;
     margin-right: 0;
-    justify-items: center;
+
 
 }
 
@@ -117,46 +104,59 @@ margin: 50px;
 }
 .mini {
 
-
+    display: block;
     object-fit:cover;
+    opacity: 1;
     height: 200px;
     width: 280px;
-    margin: 0px;
-
+    border-radius: 10px;
+    transition: .7s ease;
+    backface-visibility: hidden;
 }
 .box {
     display: block;
     height: 300px;
     width: 280px;
+
 }
+
+
 .box:hover .mini{
 
     opacity: 0.3;
+
 }
 
-.mini:hover {
-    background-color: black;
-}
+
 
 .p {
 
         display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+
 }
 
 
 
 .onhover {
     visibility: hidden;
+    position: absolute;
+    padding: 30px;
+    text-align: justify;
+
+
+
+
 }
 
 
 .box:hover .onhover {
     visibility:visible;
     opacity: 1;
+
+
+
+
+
 
 }
 
@@ -206,22 +206,28 @@ margin: 50px;
 
 
     }
-
-
-
-
-
-
 }
 
-
-
-
-@media screen and (min-width: 600px){
+@media screen and (max-width: 600px){
 
     .body {
-        margin: 180px;
+        margin: 5px;
 
     }
 
+    .title {
+
+        display: block;
+    }
+    .subtitle {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
 }
