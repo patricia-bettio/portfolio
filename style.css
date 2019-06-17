@@ -104,13 +104,14 @@ display: grid;
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
-    position: absolute;
+    display: block;
+      position: absolute;
     right: 0;
     top: 0;
   }
   .topnav.responsive a {
-    float: none;
-    display: block;
+    font-family: 'Fira Mono', monospace;
+    display: grid;
     text-align: left;
   }
 }
@@ -141,7 +142,7 @@ main {
 
 .subtitle {
     display: inline-block;
-    margin-left: 150px;
+    margin-left: 80px;
     font-family: 'Fira Mono', monospace;
     font-size: 15px;
 }
@@ -165,6 +166,10 @@ p {
         display: block;
         font-family: 'Fira Mono', monospace;
         font-size: 12px;
+    text-align: justify;
+}
+p.onhover {
+    font-size: 25px;
 }
 
 /* remove decoration/underline for all a href elements, links*/
@@ -193,7 +198,7 @@ a {
 
 .box:hover .mini{
 
-    opacity: 0.3;
+    opacity: 0.1;
 
 }
 
@@ -205,9 +210,10 @@ a {
 
 .onhover {
     visibility: hidden;
-    position: absolute;
-    padding: 30px;
+    position:absolute;
+    padding: 20px;
     text-align: justify;
+
 
 
 
@@ -303,4 +309,5 @@ a {
     grid-template-columns: 1fr;
     grid-gap: 10px;
   }
+
 }
