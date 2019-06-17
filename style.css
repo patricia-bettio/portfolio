@@ -12,19 +12,20 @@ display: grid;
         'left wrapper right'
         'footer footer footer';
 
-    padding-top: 0px;
-
+    padding: 50px;
+    padding-top: 5px;
 
 }
 
 .hero-image {
-    background-image: url(images/copacabanaversao1.jpg);
+    background-image: url(images/copacabanareverso.jpg);
     display: grid;
     grid-area: hero-image;
-    background-repeat: no-repeat;
-    background-position:center;
+    background-repeat: repeat;
+    background-position:top;
     background-size: cover;
     position: relative;
+
 
 
 
@@ -51,7 +52,7 @@ display: grid;
 
 .footer {
     grid-area: footer;
-    background-image: url(images/copacabanafooter.jpg);
+    background-image: url(images/copacabanaversao2.jpg);
     background-position: bottom;
     background-size: cover;
 }
@@ -66,7 +67,7 @@ display: grid;
   background-color: ghostwhite;
     justify-content: space-around;
     display: flex;
-    padding: 15px;
+
 
 
 }
@@ -118,8 +119,8 @@ display: grid;
 
 body {
     height: 100%;
-    padding: 60px;
-    padding-top: 10px;
+    padding: 0px;
+    padding-top: 0px;
     background-color: whitesmoke;
 
 }
@@ -230,15 +231,15 @@ a {
 .somebar {
     position: fixed;
     margin: 0px;
-    top: 55%;
+    top: 50%;
     left: 0px;
 }
 
 .somebar a {
     display: block;
-    padding: 15px;
+    padding: 10px;
     color: white;
-    font-size: 25px;
+    font-size: 30px;
 
 }
 
@@ -291,7 +292,14 @@ a {
 }
 
 @media screen and (max-width: 600px) {
-  .wrapper {
+    .container {
+        grid-template-rows: 4fr 1fr;
+    }
+    .hero-image{
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .wrapper {
     grid-template-columns: 1fr;
     grid-gap: 10px;
   }
