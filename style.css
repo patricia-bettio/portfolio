@@ -1,8 +1,3 @@
-body {
-    padding: 80px;
-    background-color: whitesmoke;
-
-}
 
 
 /**OVERALL GRID**/
@@ -10,30 +5,35 @@ body {
 .container {
 display: grid;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 1fr 1fr 8fr 1fr;
+    grid-template-rows: 3fr 100px 8fr 100px;
     grid-template-areas:
         'hero-image hero-image hero-image'
         'menu menu menu'
         'left wrapper right'
         'footer footer footer';
 
+    padding-top: 0px;
+
 
 }
 
 .hero-image {
-    background-image: url(images/desktop-scene.jpg);
+    background-image: url(images/copacabanaversao1.jpg);
     display: grid;
     grid-area: hero-image;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:center;
     background-size: cover;
     position: relative;
+
 
 
 
 }
 .menu {
     grid-area: menu;
+
+
 
 }
 
@@ -51,31 +51,98 @@ display: grid;
 
 .footer {
     grid-area: footer;
+    background-image: url(images/copacabanafooter.jpg);
+    background-position: bottom;
+    background-size: cover;
 }
 
 
 /**end grid**/
 
+/**menu **/
+
+.topnav {
+  overflow: hidden;
+  background-color: ghostwhite;
+    justify-content: space-around;
+    display: flex;
+    padding: 15px;
+
+
+}
+
+.topnav a {
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 40px;
+    margin: 0px;
+    font-family: 'Libre Barcode 39 Text', cursive;
+
+}
+
+.topnav a:hover {
+  text-decoration: underline;
+}
+
+
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/**end menu**/
+
 body {
     height: 100%;
-    padding: 50px;
+    padding: 60px;
+    padding-top: 10px;
     background-color: whitesmoke;
 
 }
 
+main {
+    padding: 0px;
+}
 /** text styles**/
 
 .title {
     display: inline-block;
-    margin: 30px;
-    font-weight: bold;
+    padding: 10px;
+    font-family: 'Fira Mono', monospace;
+    font-size: 20px;
 
 
 }
 
 .subtitle {
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 150px;
+    font-family: 'Fira Mono', monospace;
+    font-size: 15px;
 }
 
 .wrapper {
@@ -83,24 +150,26 @@ body {
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-
     grid-row-gap: 10px;
-    grid-column-gap: 30px;
-    padding: 0;
+    grid-column-gap: 20px;
+    padding: 0px;
     margin-top: 5px;
-    margin-left: 0;
-    margin-right: 0;
+
 
 
 }
 
 
-.textinfo {
+p {
         display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+        font-family: 'Fira Mono', monospace;
+        font-size: 12px;
+}
+
+/* remove decoration/underline for all a href elements, links*/
+a {
+    color: inherit;
+    text-decoration: inherit;
 }
 .mini {
 
@@ -129,11 +198,7 @@ body {
 
 
 
-.p {
 
-        display: block;
-
-}
 
 
 
@@ -165,7 +230,7 @@ body {
 .somebar {
     position: fixed;
     margin: 0px;
-    top: 50%;
+    top: 55%;
     left: 0px;
 }
 
