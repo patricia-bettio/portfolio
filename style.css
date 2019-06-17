@@ -31,6 +31,16 @@ display: grid;
 
 
 }
+
+.image{
+  background-image: url(images/copacabanareverso.jpg);
+    display: grid;
+    grid-area: hero-image;
+    background-repeat: repeat;
+    background-position:top;
+    background-size: cover;
+    position: relative;
+}
 .menu {
     grid-area: menu;
 
@@ -73,7 +83,7 @@ display: grid;
 }
 
 .topnav a {
-  color: black;
+  color: dimgrey;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -84,7 +94,7 @@ display: grid;
 }
 
 .topnav a:hover {
-  text-decoration: underline;
+  color: forestgreen;
 }
 
 
@@ -169,8 +179,9 @@ p {
         font-size: 12px;
     text-align: justify;
 }
-p.onhover {
+.onhover {
     font-size: 25px;
+    color: blue;
 }
 
 /* remove decoration/underline for all a href elements, links*/
@@ -315,5 +326,97 @@ a {
 
     grid-gap: 10px;
   }
+
+}
+
+
+/* index page */
+
+.toptext {
+
+    font-family: 'Fira Mono', monospace;
+    position: absolute;
+     font-size: 25px;
+  top: 20%;
+  left: 25%;
+}
+.toptext1 {
+    position: absolute;
+    font-family: 'Fira Mono', monospace;
+     font-size: 25px;
+    top: 25%;
+    left: 30%;
+}
+.toptext2 {
+    position: absolute;
+    font-family: 'Fira Mono', monospace;
+    font-size: 25px;
+    top: 30%;
+  left: 35%;
+}
+
+/**menu INDEX **/
+
+.topnav1 {
+  overflow: hidden;
+  background-color: ghostwhite;
+    justify-content: space-around;
+    display: flex;
+
+
+
+}
+
+.topnav1 a {
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 40px;
+    margin: 0px;
+    font-family: 'Libre Barcode 39 Text', cursive;
+
+}
+
+.topnav1 a:hover {
+  color: aqua;
+}
+
+
+
+.topnav1 .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav1 a:not(:first-child) {display: none;}
+  .topnav1 a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav1.responsive {position: relative;}
+  .topnav1.responsive .icon {
+
+      position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav1.responsive a {
+    font-family: 'Fira Mono', monospace;
+      float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/**end menu**/
+
+.container1 {
+  position: absolute;
+  margin: 0px;
+  width: auto;
 
 }
