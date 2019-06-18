@@ -5,87 +5,121 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="https://fonts.googleapis.com/css?family=Fira+Mono|Libre+Barcode+39+Text&display=swap" rel="stylesheet">
+
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
     <title>portfolio</title>
 </head>
-<div class="container">
-    <body>
-    <div class="image"></div>
 
-   <header class="menu">
-
-        <div class="topnav" id="myTopnav">
-            <a href="index2.html" class="active">HOME</a>
-            <a href="portfolio.html"><span style="color:green">PORTFOLIO</span></a>
-            <a href="about.html">ABOUT</a>
+<body>
+    <div class="container">
 
 
+        <div class="image"></div>
 
-        </div>
+        <header class="menu">
 
-    </header>
+            <div class="topnav" id="myTopnav">
+                <a href="index2.html" class="active">HOME</a>
+                <a href="portfolio.html"><span style="color:green">PORTFOLIO</span></a>
+                <a href="about.html">ABOUT</a>
 
 
 
-    <!-- social media bar -->
-    <aside class="left">
-       <div class="somebar">
-            <a href="https://www.linkedin.com/in/patricia-bettio/?locale=en_US" target="_blank"><img src="images/LI-In-Bug.png" class="linkedin"></a>
-            <a href="https://github.com/pbettio/portfolio" class="github" target="_blank"><img src="images/github.jpg" class="github"></a>
-        </div>
+            </div>
 
-    </aside>
-    <aside class="right"></aside>
+        </header>
+
+
+
+        <!-- social media bar -->
+        <aside class="left">
+            <div class="somebar">
+                <a href="https://www.linkedin.com/in/patricia-bettio/?locale=en_US" target="_blank"><img src="images/LI-In-Bug.png" class="linkedin" alt="linkedin logo"></a>
+                <a href="https://github.com/pbettio/portfolio" class="github" target="_blank"><img src="images/github.jpg" class="github" alt="github logo"></a>
+            </div>
+
+        </aside>
+        <aside class="right"></aside>
 
 
         <main class="main">
 
 
             <div class="title" style="color:orange">Roberto Burle Marx, brazilian designer, found in waves the inspiration to design the iconic sidewalks from Rio de Janeiro.</div>
-            <div class="subtitle">The image for this website was carefully selected for my first student portfolio bacause it represents my thoughts on process creation. I believe that our personal experiences, good and bad, are valuable and when combined form the way we see the world. Furthermore it is with these same eyes that we develop creativity, sensibility and other emotions that we often turn back to in design creation.<br><br> Inspiration comes in different forms and a great design can be as simple as a wave.</div>
+            <div class="subtitle" style="color:forestgreen">The image for this website was carefully selected for my first student portfolio bacause it represents my thoughts on process creation. I believe that our personal experiences, good and bad, are valuable and when combined form the way we see the world. Furthermore it is with these same eyes that we develop creativity, sensibility and other emotions that we often turn back to in design creation.<br><br> Inspiration comes in different forms and a great design can be as simple as a wave.</div>
             <div class="titlebarcode">ABOUT ME</div>
-            <p>I am a brazilian living in Copenhagen for 2 years now. This is my first time living abroad and I am loving the journey. I went through Law School in Brazil and, althout the law bachelor, I have always worked with IT Support. What started as a need became a passion, and I have proudly more than 6 years experience in the area. I can perform basic troubleshooting, some second level support, manually install software, debug, but this is my first contact with actual coding. One semester passed and so much changed at work because of all this knowledge I have acquired so far.Thank you!<br>Could not be more satisfied with MMD, it feels good to finally know I am definetely on the right path.<br></p><a href=""><p><br>You may check my CV HERE</p></a>
+            <p>I am a brazilian living in Copenhagen for 2 years now. This is my first time living abroad and I am loving the journey. I went through Law School in Brazil and, althout the law bachelor, I have always worked with IT Support. What started as a need became a passion, and I have proudly more than 6 years experience in the area. I can perform basic troubleshooting, some second level support, manually install software, debug, but this is my first contact with actual coding. One semester passed and so much changed at work because of all this knowledge I have acquired so far.Thank you!<br>Could not be more satisfied with MMD, it feels good to finally know I am definetely on the right path.<br></p><a href="resume_patriciaB.pdf" target="_blank">
+                <p style="color:orange"><br>++You may check my CV HERE</p>
+            </a>
 
             <div class="titlebarcode">Inspiration</div>
 
             <div class="inspiration">
 
-            <img class="slides" src="images/waves.jpg" width="500px" height="300px">
-                <img class="slides" src="images/merio.jpg" width="500px" height="350px">
-                <img class="slides" src="images/jeri.jpg" width="500px" height="400px">
-                <img class="slides" src="images/cph.jpg" width="300px" height="400px">
-                <img class="slides" src="images/keanew.jpg" width="300px" height="400px">
+                <img class="slides" src="images/waves.jpg" width="500" height="300" alt="design of sidewalk in Copacabana">
+                <img class="slides" src="images/merio.jpg" width="500" height="350" alt="woman posing in Rio de Janeiro">
+                <img class="slides" src="images/jeri.jpg" width="500" height="400" alt="Jericoacora beach">
+                <img class="slides" src="images/cph.jpg" width="300" height="400" alt="sad woman under rain in Copenhagen">
+                <img class="slides" src="images/keanew.jpg" width="300" height="400" alt="happy woman when accepted at KEA">
 
             </div>
 
+                       <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+            </a>
+        </p>
 
- </main>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!">
+            </a>
+        </p>
+
+
+
+        </main>
+
+
+
+
+
+
 
         <script>
+            var myIndex = 0;
+            carousel();
 
-        var myIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("slides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}
-  x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 3000);
-}
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("slides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 3000);
+            }
         </script>
-  <footer class="footer">
-    </footer>
-        </body>
-</div>
+
+
+
+
+        <footer class="footer">
+
+        </footer>
+
+    </div>
+
+
+
+
+</body>
 
 </html>
-

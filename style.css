@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono|Libre+Barcode+39+Text&display=swap');
 /**OVERALL GRID**/
 
 .container {
@@ -62,7 +63,7 @@
     overflow: hidden;
     background-color: ghostwhite;
     justify-content: space-around;
-    display:flex;
+    display: flex;
     position: relative;
 
 
@@ -99,6 +100,7 @@
 
 
     }
+
     .topnav {
         flex-direction: column;
         display: flex;
@@ -108,9 +110,11 @@
     .container {
         margin: 0px;
     }
+
     .main {
         margin: 0px;
     }
+
     .title {
         margin-top: 10px;
     }
@@ -259,7 +263,7 @@ a {
     display: block;
     height: 30px;
     padding: 1px;
-    }
+}
 
 
 
@@ -375,13 +379,15 @@ a {
     display: flex;
     justify-content: center;
     margin: 40px;
+    color: dimgray;
 }
 
 .inspiration {
     justify-content: center;
-   position: relative;
-    display:flex;
+    position: relative;
+    display: flex;
 }
+
 .slides {
 
     margin: 50px;
@@ -391,8 +397,8 @@ a {
 
     .slides {
         max-width: 350px;
-        max-height: auto;
+
         margin: 5px;
         margin-bottom: 40px;
     }
- }
+}
