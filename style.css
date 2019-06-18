@@ -96,7 +96,6 @@
     .topnav a {
         font-family: 'Fira Mono', monospace;
         font-size: 20px;
-        text-align: left;
         padding: 5px;
 
 
@@ -107,6 +106,9 @@
 
 
 
+    }
+    .main {
+        margin: 50px;
     }
 }
 
@@ -239,35 +241,38 @@ a {
     margin: 0px;
     top: 50%;
     left: 0px;
+
+
 }
 
-.somebar a.linkedin {
+.linkedin {
     display: block;
-
-    background-image: url(images/LI-In-Bug.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-
+    height: 30px;
+    padding: 1px;
 }
 
-.somebar a:hover {
-    background-color: black;
-}
+.github {
+    display: block;
+    height: 30px;
+    padding: 1px;
+    }
 
 
-/** responsive solutions **/
+
+/** resposive social media bar**/
 
 @media screen and (max-width: 600px) {
     .somebar {
 
         overflow: hidden;
         position: fixed;
+        top: 90%;
         bottom: 0;
         left: 0;
-        width: 100%;
-        max-width: 100%;
-        top: inherit;
+
+
         display: inline-flex;
+        flex-direction: column;
         opacity: 0.8;
 
 
