@@ -1,0 +1,42 @@
+
+li {
+    cursor: pointer;
+    list-style: none;
+
+}
+
+
+ul {
+    margin: 50px;
+    padding: 10px;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+    font-size: 15px;
+
+}
+
+input {
+    display: block;
+    margin: 2px;
+    border: 1px;
+    border-radius: 10px;
+    border-style: dashed;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 15px;
+}
+
+button {
+    display: block;
+    padding: 10px;
+    width: 100px;
+    background-color: greenyellow;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 10px;
+}

@@ -10,7 +10,7 @@
         'left wrapper right'
         'footer footer footer';
 
-    padding: 40px;
+    padding: 50px;
 
 }
 
@@ -29,6 +29,7 @@
 .menu {
     grid-area: menu;
     position: relative;
+
 
 
 
@@ -66,10 +67,6 @@
     position: relative;
 
 
-
-
-
-
 }
 
 .topnav a {
@@ -100,11 +97,14 @@
         font-family: 'Fira Mono', monospace;
         font-size: 20px;
         text-align: left;
+        padding: 5px;
 
 
     }
     .topnav {
         flex-direction: column;
+
+
 
 
     }
@@ -241,11 +241,12 @@ a {
     left: 0px;
 }
 
-.somebar a {
+.somebar a.linkedin {
     display: block;
-    padding: 10px;
-    color: white;
-    font-size: 30px;
+
+    background-image: url(images/LI-In-Bug.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 
 }
 
@@ -253,15 +254,6 @@ a {
     background-color: black;
 }
 
-.linkedin {
-    background-color: #007bb5;
-
-}
-
-.github {
-    background-color: darkgreen;
-    font-size: 24px;
-}
 
 /** responsive solutions **/
 
@@ -287,6 +279,7 @@ a {
     .container {
         padding: 0px;
 
+
     }
 
     .onhover {
@@ -296,12 +289,20 @@ a {
     .title {
         padding: 0px;
 
+
     }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
 
     .image {
 
         background-repeat: no-repeat;
         background-size: cover;
+
 
     }
 
