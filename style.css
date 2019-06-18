@@ -393,6 +393,10 @@ a {
     margin: 50px;
 }
 
+.aboutp {
+    margin: 20px;
+}
+
 @media screen and (max-width: 600px) {
 
     .slides {
@@ -401,4 +405,7 @@ a {
         margin: 5px;
         margin-bottom: 40px;
     }
+
+
 }
+
