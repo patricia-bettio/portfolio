@@ -3,42 +3,28 @@
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
-    grid-template-rows: 450px 100px 8fr 150px;
+    grid-template-rows: 450px 80px 8fr 150px;
     grid-template-areas:
-        'hero-image hero-image hero-image'
+        'image image image'
         'menu menu menu'
         'left wrapper right'
         'footer footer footer';
 
-    padding: 50px;
-    padding-top: 5px;
-
-}
-
-.hero-image {
-    background-image: url(images/copacabanareverso.jpg);
-    display: grid;
-    grid-area: hero-image;
-    background-repeat: repeat;
-    background-position: top;
-    background-size: cover;
-    position: relative;
-
-
-
-
+    padding: 40px;
 
 }
 
 .image {
     background-image: url(images/copacabanareverso.jpg);
     display: grid;
-    grid-area: hero-image;
+    grid-area: image;
     background-repeat: repeat;
     background-position: top;
     background-size: cover;
     position: relative;
+
 }
+
 
 .menu {
     grid-area: menu;
@@ -76,8 +62,9 @@
     overflow: hidden;
     background-color: ghostwhite;
     justify-content: space-around;
-    display: flex;
+    display:flex;
     position: relative;
+
 
 
 
@@ -130,6 +117,7 @@ body {
     padding: 0px;
     padding-top: 0px;
     background-color: whitesmoke;
+    margin: 0px;
 
 }
 
@@ -310,7 +298,7 @@ a {
 
     }
 
-    .hero-image {
+    .image {
 
         background-repeat: no-repeat;
         background-size: cover;
@@ -338,6 +326,7 @@ a {
 .toptext {
 
     font-family: 'Fira Mono', monospace;
+    background-color: white;
     position: absolute;
     font-size: 25px;
     top: 20%;
@@ -347,6 +336,7 @@ a {
 .toptext1 {
     position: absolute;
     font-family: 'Fira Mono', monospace;
+    background-color: white;
     font-size: 25px;
     top: 25%;
     left: 30%;
@@ -355,6 +345,7 @@ a {
 .toptext2 {
     position: absolute;
     font-family: 'Fira Mono', monospace;
+    background-color: white;
     font-size: 25px;
     top: 30%;
     left: 35%;
