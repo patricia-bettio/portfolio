@@ -101,20 +101,18 @@
     }
     .topnav {
         flex-direction: column;
-
-
-
+        display: flex;
 
     }
 
     .container {
-        margin: 5px;
+        margin: 0px;
     }
     .main {
         margin: 0px;
     }
     .title {
-        margin-top: 30px;
+        margin-top: 10px;
     }
 }
 
@@ -291,6 +289,7 @@ a {
         padding: 0px;
 
 
+
     }
 
     .onhover {
@@ -299,6 +298,7 @@ a {
 
     .title {
         padding: 0px;
+        margin-top: 20px;
 
 
     }
@@ -306,6 +306,7 @@ a {
     .main {
         display: flex;
         flex-direction: column;
+
     }
 
 
@@ -325,7 +326,10 @@ a {
 
     .box {
         height: auto;
+
     }
+
+
     p {
         font-size: 15px;
     }
