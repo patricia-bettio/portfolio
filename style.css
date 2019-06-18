@@ -367,3 +367,32 @@ a {
     left: 35%;
 }
 
+/* about me page */
+
+.titlebarcode {
+    font-family: 'Libre Barcode 39 Text', cursive;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.inspiration {
+    justify-content: center;
+   position: relative;
+    display:flex;
+}
+.slides {
+
+    margin: 50px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .slides {
+        max-width: 350px;
+        max-height: auto;
+        margin: 5px;
+        margin-bottom: 40px;
+    }
+ }
